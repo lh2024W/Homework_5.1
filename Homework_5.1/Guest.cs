@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Homework_5._1
+{
+    public class Guest
+    {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public ICollection<Event> Events { get; set; }
+
+        public ICollection<EventGuestRelation> EventGuestRelations { get; set; }
+    }
+}
